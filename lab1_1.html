@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Взаємодія з користувачем</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        alert("Ласкаво просимо на нашу сторінку!");
+
+        const isReady = confirm("Чи готові ви пройти невеличке опитування?");
+        if (isReady) {
+            const hobby = prompt("Яке ваше улюблене хобі?", "");
+            if (hobby) {
+                alert("Чудовий вибір! Займатися " + hobby + " – це надзвичайно захопливо.");
+            } else {
+                alert("Нічого страшного, наступного разу зможемо дізнатися більше!");
+            }
+        } else {
+            alert("Зрозуміло, можливо іншим разом!");
+        }
+        
+        window.location.href = "index.html"; // Перенаправляє на іншу сторінку
+    </script>
+</body>
+</html>

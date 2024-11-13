@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Обчислення математичних виразів</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        const y = parseFloat(prompt("Введіть значення y:", ""));
+        
+        // Нові формули для обчислень
+        let p = 3 * y * y - 4 * y + 7;
+        let q = y / 3 + y * y * 2 - 8;
+
+        let result = p + q;
+        
+        alert("Результат обчислень: " + result);
+
+        // Додаємо пропозицію повторити
+        const repeat = confirm("Бажаєте виконати обчислення ще раз?");
+        if (repeat) {
+            location.reload(); // Оновлює сторінку, щоб знову показати запит
+        } else {
+            alert("Дякуємо за використання нашого калькулятора!");
+        }
+    </script>
+</body>
+</html>

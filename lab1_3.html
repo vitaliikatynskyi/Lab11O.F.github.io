@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Лінійні алгоритми</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        
+        // Запитуємо значення для параметрів
+        let c = parseInt(prompt("Введіть значення параметра c:", ""));
+        let d = parseInt(prompt("Введіть значення параметра d:", ""));
+        
+        // Використовуємо інші обчислення
+        let x = Math.round(c * Math.tan(d) + Math.cos(c) * Math.pow(d, 2));
+        let y = Math.min(c, d, Math.abs(c - d), Math.sqrt(c + d));
+        
+        // Виводимо результати з обмеженням кількості знаків після коми
+        alert("Значення x: " + x.toFixed(2));
+        alert("Значення y: " + y.toFixed(2));
+
+        // Запропонуємо завершити або виконати обчислення ще раз
+        const repeat = confirm("Бажаєте виконати обчислення ще раз?");
+        if (repeat) {
+            location.reload(); // Перезавантажує сторінку для нового обчислення
+        } else {
+            alert("Дякуємо за використання програми!");
+        }
+    </script>
+</body>
+</html>
